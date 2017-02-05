@@ -54,9 +54,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'yanjuncq'
+                        id 'joleyii'
                         // #修改# // 你的userid，昵称
-                        name 'yanjuncq'                                       // #修改# // 用户名
+                        name 'jun.yan'                                       // #修改# // 用户名
                         email 'yanshijun2013@gmail.com'                               // #修改# // 邮箱
                     }
                 }
@@ -93,13 +93,14 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 bintray {
-    user = properties.getProperty("joelyii")
-    key = properties.getProperty("4add5cc637f4ce7cb02ac9fe46bba905984f958c")
+    user = "joleyii"
+    key = "4add5cc637f4ce7cb02ac9fe46bba905984f958c"
     // 上面两个 user和key 需要留意一下，在local.properites 里面配置的
     configurations = ['archives']
     pkg {
         repo = "maven"
         name = "Chrysanthemum"
+        userOrg = 'joelyii'
         // #修改# //  在 jcenter 上面的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
